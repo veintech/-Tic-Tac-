@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:paddingLeft="@dimen/fab_margin"
+    android:paddingRight="@dimen/fab_margin"
+    android:orientation="vertical"
+    android:background="#452502">
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:paddingTop="@dimen/fab_margin"
+        android:background="@drawable/main_menu"
+    />
+
+   <RadioGroup
+       android:id="@+id/select_player"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="@dimen/fab_margin"
+   >
+
+       <RadioButton
+           android:id="@+id/one_player"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:textSize="@dimen/menu_font"
+           android:text="@string/_1_player"
+           android:textColor="#fff"
+         />
+       <RadioButton
+           android:id="@+id/two_player"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:textSize="@dimen/menu_font"
+           android:text="@string/_2_player"
+           android:textColor="#fff"
+       />
+      </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/select_marker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/fab_margin">
+
+        <RadioButton
+            android:id="@+id/x"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/x"
+            android:textSize="@dimen/menu_font"
+            android:textColor="#fff"
+        />
+        <RadioButton
+            android:id="@+id/o"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/menu_font"
+            android:text="@string/o"
+            android:textColor="#fff"
+        />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/select_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/fab_margin">
+
+        <RadioButton
+            android:id="@+id/board_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/_3x3"
+            android:textColor="#fff"
+            android:textSize="@dimen/menu_font"
+        />
+        <RadioButton
+            android:id="@+id/board_five"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/_5x5"
+            android:textColor="#fff"
+            android:textSize="@dimen/menu_font"
+        />
+    </RadioGroup>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:baselineAligned="false"
+                  android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="0dp"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:padding="@dimen/fab_margin"
+                      android:layout_gravity="end"
+                      android:layout_height="wrap_content">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                app:fabSize="mini"
+                android:id="@+id/exit_game"
+                app:backgroundTint="#b41c01"
+                android:src="@drawable/ic_close"
+                android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:textAllCaps="true"
+                      android:textColor="#fff"
+                      android:padding="8dp"
+                      android:text="@string/exit_game"
+                      android:textSize="12sp"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:padding="@dimen/fab_margin"
+                      android:layout_gravity="end"
+                      android:layout_height="wrap_content">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                app:fabSize="mini"
+                android:id="@+id/start_game"
+                app:backgroundTint="@color/dark_yellow"
+                android:src="@drawable/ic_play"
+                android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:textAllCaps="true"
+                      android:textColor="#fff"
+                      android:text="@string/start"
+                      android:padding="8dp"
+                      android:textSize="12sp"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

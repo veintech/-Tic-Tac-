@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3366FF</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ffc800</color>
+    <color name="strike_out_color">#07e40b</color>
+    <color name="dark_yellow">#e7be9909</color>
+</resources>
